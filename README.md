@@ -8,6 +8,10 @@ add :
    eureka sever
    devtools
    actuator
+ 
+eureka.dashboard.enable=true  => by default
+
+localhost:8761
    
 ## eureka service
     eureka discovery
