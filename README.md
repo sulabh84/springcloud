@@ -9,7 +9,7 @@ add :
    devtools
    actuator
    
-## eureka client
+## eureka service
     eureka discovery
 	devtools
 	actuator
@@ -21,4 +21,9 @@ instace 1:
   
   server.port=8082
   service.instance.name=instance 2
-   
+  
+## eureka client
+    eureka discovery
+	devtools
+	actuator
+
