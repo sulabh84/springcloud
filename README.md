@@ -9,3 +9,10 @@ add :
    devtools
    actuator
    
+## eureka client
+    eureka discovery
+	devtools
+	actuator
+	
+
+   
