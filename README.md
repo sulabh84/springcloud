@@ -58,3 +58,10 @@ Hit Zuul service to hello-zuul-service:
 	
 Hit Zuul service to goodbye-zuul-service:
 	http://localhost:8080/goodbye-zuul
+	
+Zuul has four type of filters: (extends ZuulFilter)
+	Pre
+	route
+	Post
+	error
+	
