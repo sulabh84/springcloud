@@ -2,7 +2,10 @@
 
 tutor site : http://dustin.schultz.io/ps-scf/
 
-## eureka server
+----------------------------------------------------
+## Eureka Server
+
+### eureka server
 https://start.spring.io/
 add :
    eureka sever
@@ -13,7 +16,7 @@ eureka.dashboard.enable=true  => by default
 
 Dashboard of discovery server: localhost:8761
    
-## eureka service
+### eureka service
     eureka discovery
 	devtools
 	actuator
@@ -26,7 +29,7 @@ instace 1:
 	server.port=8082
 	service.instance.name=instance 2
   
-## eureka client
+### eureka client
     eureka discovery
 	devtools
 	actuator
@@ -35,33 +38,35 @@ instace 1:
 
 ## ZUUL - API Gateway
 
-create gateway-service
+### create gateway-service
 	eureka discovery
 	ZUUL
 	
-hello-zuul-service
+### hello-zuul-service
 	eureka discovery
 	web
 	
-goodbye-zuul-service
+### goodbye-zuul-service
 	eureka discovery
 	web
 	
-Start one-by-one in below order
+### Start one-by-one in below order
 	eureka server
 	gateway-service
 	goodbye-zuul-service
 	hello-zuul-service
 	
-Hit Zuul service to hello-zuul-service:
+### Hit Zuul service to hello-zuul-service:
 	http://localhost:8080/hello-zuul
 	
-Hit Zuul service to goodbye-zuul-service:
+### Hit Zuul service to goodbye-zuul-service:
 	http://localhost:8080/goodbye-zuul
 	
-Zuul has four type of filters: (extends ZuulFilter)
+### Zuul has four type of filters: (extends ZuulFilter)
 	Pre
 	route
 	Post
 	error
 	
+-------------------------------------------------------
+
