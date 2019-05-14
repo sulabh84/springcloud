@@ -11,7 +11,7 @@ add :
  
 eureka.dashboard.enable=true  => by default
 
-localhost:8761
+Dashboard of discovery server: localhost:8761
    
 ## eureka service
     eureka discovery
@@ -47,3 +47,14 @@ goodbye-zuul-service
 	eureka discovery
 	web
 	
+Start one-by-one in below order
+	eureka server
+	gateway-service
+	goodbye-zuul-service
+	hello-zuul-service
+	
+Hit Zuul service to hello-zuul-service:
+	http://localhost:8080/hello-zuul
+	
+Hit Zuul service to goodbye-zuul-service:
+	http://localhost:8080/goodbye-zuul
