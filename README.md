@@ -70,3 +70,32 @@ instace 1:
 	
 -------------------------------------------------------
 
+## Application Config Server
+
+### Endpoint
+	GET /{application}/{profile}[/{label}]
+	application = spring.application.name
+	profile = spring.profiles.active  (default is by default)
+	label = branch in a git repo (Optional)
+	
+	-- label is always is master
+	GET /{application}-{profile}.(yml | properties)
+	
+	GET /{label}/{application}-{profile}.(yml | properties)
+	
+### Create a config server
+	add below dependency
+		config server
+		eureka discovery
+		actuator
+		
+### Setup the config git repo;
+	https://github.com/sulabh84/scf-config-repository
+	
+### Start the server:
+	http://localhost:8888/config-client-app/default
+	http://localhost:8888/config-client-app.properties
+	http://localhost:8888/config-client-app.yml
+	http://localhost:8888/config-client-app-prod.properties
+	
+	
