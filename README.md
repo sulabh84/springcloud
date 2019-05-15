@@ -98,4 +98,8 @@ instace 1:
 	http://localhost:8888/config-client-app.yml
 	http://localhost:8888/config-client-app-prod.properties
 	
-	
+### Config client
+	There are two types:
+		config first - it will have direct url of the config server
+		discovery first - it will just enable the eureka discovery with no config server url
+		
