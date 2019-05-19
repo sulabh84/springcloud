@@ -102,4 +102,12 @@ instace 1:
 	There are two types:
 		config first - it will have direct url of the config server
 		discovery first - it will just enable the eureka discovery with no config server url
+	
+	add below dependency
+		config client
+		eureka discovery
+		actuator
+		web
 		
+	hit url : localhost:8080
+
